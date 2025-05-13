@@ -35,3 +35,50 @@ This project builds an interpreter that simulates:
 ## ⚙️ Sample Input and Output
 
 **Input Prompt:**
+Please enter the initial freelist (heap) size: 512
+Please enter the name of an input file: test.myl
+
+**Sample Execution Output:**
+Variables:
+b:34(57) [1]
+c:0(17) [1]
+Free List:
+17(17) [0], 91(421) [0]
+...
+
+
+---
+
+## ⚡ Approach and Implementation
+
+### 🧠 User Input
+- Prompts the user for initial heap size and input filename.
+
+### 🧩 Parsing
+- A recursive descent parser interprets commands according to BNF grammar.
+
+### 📦 Memory Management
+- **alloc**: Allocates memory using the first-fit approach.
+- **free**: Frees blocks and returns them to the freelist.
+- **compress**: Merges adjacent free blocks.
+- **dump**: Prints variable list and freelist.
+
+### ♻️ Garbage Collection
+- Tracks reference counts and reclaims memory for unused variables.
+
+---
+
+## 🚀 Setup and Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/project-repo.git
+
+### 2. Compile the Code
+g++ -o memory_manager memory_manager.cpp
+
+### 3. Run the Program
+./memory_manager
+
+
+
