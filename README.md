@@ -69,9 +69,10 @@ Free List:
 ---
 
 ## 🚀 Setup and Instructions
+- Requires C++17 standard or newer
 
-### 1. Clone the Repository
 ```bash
+### 1. Clone the Repository
 git clone https://github.com/yourusername/project-repo.git
 
 ### 2. Compile the Code
