@@ -39,6 +39,7 @@ Please enter the initial freelist (heap) size: 512
 Please enter the name of an input file: test.myl
 
 **Sample Execution Output:**
+```bash
 Variables:
 b:34(57) [1]
 c:0(17) [1]
@@ -46,7 +47,7 @@ Free List:
 17(17) [0], 91(421) [0]
 ...
 
-
+```
 ---
 
 ## ⚡ Approach and Implementation
