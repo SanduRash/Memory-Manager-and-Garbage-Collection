@@ -1,0 +1,25 @@
+//////////////////////////////////////////
+//Sandu Galbokka Hewa
+//System II Project 3
+//April, 17 2025
+//Linux
+//No bugs
+//No special steps needed to compile this project. I used makefile.
+/////////////////////////////////////////
+
+I used that provided files to implement this project. Mainly I had to think of two parts.
+	1. Where I should place the function calls.
+	2. How I should code for the functions.
+
+For the first part, I used Grammar.cpp and found the places I should put my functions.
+
+For the second part, I used linked list concept to connect every allocated blocks and free blocks. I have a class called variable which store list of variable names(if the different variable names are assigned to same block, this list will store each variable name), address, size of a block, reference count, and pointer to next block. The other class i have called MemoryList which links every block with a (dummy) root.
+
+Inside of my MemoryList class, mainly i have 6 methods for
+	1.to check if a variable is in the linked list - checkIsThere()
+	2.to free a block - free()
+	3.to allocate space for a variable - alloc()
+	4.to assign one variable to another variable - assign()
+	5.to show details about variables and free list - dump()
+	6.to compress the free list - compress()
+
