@@ -77,10 +77,10 @@ Free List:
 git clone https://github.com/yourusername/project-repo.git
 
 ### 2. Compile the Code
-g++ -o memory_manager memory_manager.cpp
+make
 
 ### 3. Run the Program
-./memory_manager
+./beautifier
 
 
 
